@@ -10,6 +10,8 @@ If you have a MSMQ public queue called  @".\private$\MyTestingQueues" then you c
 
 ## Usage ##
 
+In your project you will have to add a reference to the System.Messaging dll and to the RabbitMQ client dll. Then you can have a program like this:
+
 	module Program
 
 	open System.Messaging
