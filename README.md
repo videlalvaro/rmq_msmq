@@ -6,7 +6,7 @@ The bridge is implemented using *FSharp* and the [RabbitMQ Client for .Net](http
 
 ## Implementation ##
 
-If you have a MSMQ public queue called  @".\private$\MyTestingQueues" then you can subscribe to it, receive messages from it and then send them to RabbitMQ to a queue that you decide.
+If you have a MSMQ public queue called `@".\private$\MyTestingQueues"` then you can subscribe to it, receive messages from it and then send them to RabbitMQ to a queue that you decide.
 
 ## Usage ##
 
@@ -34,7 +34,7 @@ Here we pass three arguments to Bridge.msmq2rmq:
 - A tuple with (exchange, routing_key, basicProperties) used while publishing the message.
 - The name of the MSMQ Queue.
 
-In this case we are sending the messages to the _unnamed exchange_ using the _queue name_ as the _routing key_.
+In this case we are sending the messages to the *unnamed exchange* using the *queue name* as the *routing key*.
 
 If a message with body "quit" is sent to the MSMQ queue, then the Receiver will quit. The messages are expected to be formatted using `BinaryMessageFormatter`.
 
